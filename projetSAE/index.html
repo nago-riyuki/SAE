@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <div class="top">
+                <div class="email">
+                    <div class="box">
+                        <a href="index.html"><img alt="img" src="assets/img/home.svg"></a>
+                        <span>email@gmail.com</span>
+                    </div>
+                    <button class="navbar-mobile" id="navbar-mobile-close"><img alt="img" src="assets/img/close.svg"></button>
+                </div>
+
+                <div class="spacer">
+                    <h6>Mes listes</h6>
+                    <div class="line"></div>
+                </div>
+
+                <a class="task-group" href="index.html">
+                    <p>To do today</p> 
+                    <span class="number-bg">3</span>
+                </a>
+
+                <a class="task-group" href="list.html">
+                    <p>Projet tutoré</p> 
+                    <span class="number-bg">3</span>
+                </a>
+
+                <a class="task-group">
+                    <p>Stage</p> 
+                </a>
+
+                <a class="task-action">
+                    <img alt="img" class="red-svg" src="assets/img/plus.svg">
+                    <p>Nouvelle liste</p>
+                </a>
+            </div>
+
+            <div class="bottom">
+                <a class="task-action" href="settings.html">
+                    <img alt="img" src="assets/img/settings.svg">
+                    <p>Paramètres</p>
+                </a>
+                
+                <a class="task-action" href="login.html">
+                    <img alt="img" src="assets/img/logout.svg">
+                    <p>Déconnexion</p>
+                </a>  
+            </div>  
+        </div>
+
+        <div class="content">
+            <div class="page-title">
+                <button class="navbar-mobile" id="navbar-mobile-open"><img alt="img" src="assets/img/menu.svg"></button>
+                <h2>Prochaines tâches</h2>
+            </div>
+            <div class="p-3">
+                <div id="tasks">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modalAfter" class="bg-modal-container-left"></div>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

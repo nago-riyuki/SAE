@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet tutoré</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main>
+
+        <div class="navbar">
+            <div class="top">
+                <div class="email">
+                    <div class="box">
+                        <a href="index.html"><img alt="img" src="assets/img/home.svg"></a>
+                        <span>email@gmail.com</span>
+                    </div>
+                    <button class="navbar-mobile" id="navbar-mobile-close"><img alt="img" src="assets/img/close.svg"></button>
+                </div>
+
+                <div class="spacer">
+                    <h6>Mes listes</h6>
+                    <div class="line"></div>
+                </div>
+
+                <a class="task-group" href="index.html">
+                    <p>To do today</p> 
+                    <span class="number-bg">3</span>
+                </a>
+
+                <a class="task-group" href="list.html">
+                    <p>Projet tutoré</p> 
+                    <span class="number-bg">3</span>
+                </a>
+
+                <a class="task-group">
+                    <p>Stage</p> 
+                </a>
+
+                <a class="task-action">
+                    <img alt="img" class="red-svg" src="assets/img/plus.svg">
+                    <p>Nouvelle liste</p>
+                </a>
+            </div>
+
+            <div class="bottom">
+                <a class="task-action" href="settings.html">
+                    <img alt="img" src="assets/img/settings.svg">
+                    <p>Paramètres</p>
+                </a>
+                
+                <a class="task-action" href="login.html">
+                    <img alt="img" src="assets/img/logout.svg">
+                    <p>Déconnexion</p>
+                </a>  
+            </div>  
+        </div>
+
+        <div class="content">
+            <div class="page-title">
+                <button class="navbar-mobile" id="navbar-mobile-open"><img alt="img" src="assets/img/menu.svg"></button>
+                <h2>Projet tutoré</h2>
+                <button class="btn btn-danger deleteModal"><img alt="img" src="assets/img/delete-forever.svg"><span class="mobile-hide">Supprimer la liste</span></button>
+            </div>
+            <div class="p-3">
+                <div id="tasks">
+                    
+                </div>
+
+                <div class="task-element new-task">
+                    <button class="task-start leftModal">
+                        <img alt="img" src="assets/img/plus.svg">
+                        <span>Ajouter une tâche...</span>
+                        
+                    </button> 
+                </div>
+            </div>  
+
+        </div>
+
+
+        <div class="bg-modal-container-left">
+            <div class="card">
+                <div class="form-group">
+                    <label>Titre</label>
+                    <input type="text" class="form-control" placeholder="Titre" id="new-title">
+                </div>
+    
+                <div class="form-group">
+                    <label>Etapes</label>
+                    <button type="button" class="form-control">
+                        Nouvelle étape 
+                        <span><img alt="img" src="assets/img/plus.svg"></span>
+                    </button>
+                </div>
+    
+                <div class="form-group">
+                    <label>Echéance</label>
+                    <input type="date" class="form-control" id="new-date">
+                </div>
+                
+                <div class="form-group">
+                    <label>Note</label>
+                    <textarea class="form-control" placeholder="Note..." id="new-note"></textarea>
+                </div>
+
+                <div class="btns">
+                    <button id="addNewTask">Enregister</button>
+                    <button class="closeModalLeft">Annuler</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalAfter" class="bg-modal-container-left"></div>
+    
+
+    </main>
+
+
+    <div class="bg-modal-container">
+        <div class="card">
+            <h2>Supprimer la liste ?</h2>
+            <p>Après avoir été supprimée, une liste ne peut pas être récupérée. Êtes-vous certain(e) de vouloir supprimer la liste "Projet tutoré" ?</p>
+            <div class="btns">
+                <button><img alt="img" src="assets/img/delete-forever.svg">Supprimer</button>
+                <button class="closeModal"><img alt="img" src="assets/img/arrow-back.svg">Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/list.js"></script>
+</body>
+</html>

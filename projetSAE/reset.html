@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rénitialisation mot de passe</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="auth">
+    <div class="container">
+        <form class="subform" id="reset" method="POST">
+            <div class="form-group">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="mail@provider.com">
+                <div id="email-error" class="error"></div>                
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+
+        <div id="reset-success" class="success"></div>
+    </div>
+
+    
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
